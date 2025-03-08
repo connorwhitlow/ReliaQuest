@@ -1,0 +1,31 @@
+New Employee from admin 
+curl -X POST http://localhost:8080/api/v1/employee \
+     -H "Content-Type: application/json" \
+     -u admin:admin123 \
+     -d '{
+          "firstName": "John",
+          "lastName": "Doe",
+          "salary": 75000,
+          "jobTitle": "Software Engineer",
+          "email": "john.doe@example.com"
+        }'
+
+New Employee from user 
+curl -X POST http://localhost:8080/api/v1/employee \
+     -H "Content-Type: application/json" \
+     -u user:user123 \
+     -d '{
+          "firstName": "John",
+          "lastName": "Doe",
+          "salary": 75000,
+          "jobTitle": "Software Engineer",
+          "email": "john.doe@example.com"
+        }'
+
+
+All employees from a user 
+curl -u user:user123 http://localhost:8080/api/v1/employee
+
+All employees from an admin
+curl -u admin:admin123 http://localhost:8080/api/v1/employee
+

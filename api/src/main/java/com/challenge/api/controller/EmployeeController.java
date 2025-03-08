@@ -22,19 +22,19 @@ import org.springframework.web.server.ResponseStatusException;
 
 /**
  * Employee API Endpoints
- * 
+ *
  * Security Notes:
  * --------------
  * 1. Who Can Do What:
  *    - Anyone can view the list of employees
  *    - Only admins can create new employees
  *    - Check if user is logged in before allowing any actions
- * 
+ *
  * 2. Keeping Things Safe:
  *    - Make sure data is sent securely (use HTTPS)
  *    - Check that all input data is valid
  *    - Don't let users request too much data at once
- * 
+ *
  * 3. Good Practices:
  *    - Keep track of who's using the API
  *    - Don't show detailed error messages to users

@@ -1,1 +1,12 @@
-spring.application.name: entry-level-java-challenge
+spring:
+  application:
+    name: entry-level-java-challenge
+  security:
+    admin:
+      username: EmployeesRUS
+      password: AWYSftc_878965$!
+
+security:
+  jwt:
+    secret-key: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+    expiration-time: 86400000  # 24 hours in milliseconds
